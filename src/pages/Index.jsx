@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Lotus, Feather, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import MeditationChart from '@/components/MeditationChart';
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('meditate');
@@ -43,7 +44,8 @@ const Index = () => {
               <div className="text-center">
                 <h2 className="text-2xl font-semibold text-indigo-800 mb-4">Guided Meditation</h2>
                 <p className="text-indigo-600 mb-6">Immerse yourself in tranquility with our premium guided meditations.</p>
-                <img src="/placeholder.svg" alt="Meditation space" className="mx-auto object-cover w-full h-[300px] rounded-lg mb-6" />
+                <MeditationChart />
+                <p className="text-indigo-600 my-4">Track your meditation progress throughout the week.</p>
                 <Button className="bg-indigo-600 hover:bg-indigo-700">Begin Your Journey</Button>
               </div>
             )}
